@@ -8,24 +8,30 @@ private:
 	float velocidadX;
 	float velocidadY;
 public:
-	void move(float _velocidadX, float _velocidadY)
+	void move(float _velocidadX, float _velocidadY);
 };
 
-Clases
-------
 
-Pacman
-Fantasma
-Moneda
-Frutita
-Muro
-Contador de puntos
-Nivel
-Contador de vidas
-Contador de tiempo
-Super moneda
-Laberinto
-Habilidad
-Generador fantasmas
-Menú
-Game manager
+
+class pacman {
+public:
+	int x, y;
+	bool cc;
+	direccion dir;
+	pacman(int xx, int yy, direccion d) { x = xx; y = yy; dir = d; }
+	void dibujar();
+};
+
+
+class fantasma {
+public:
+	int x, y;
+	int color;
+	bool levantado; //si pacman es invencible y lo levanto
+	fantasma(int xx, int yy, int c) { x = xx; y = yy; color = c; levantado = false; }
+	void direccionar();
+	void randomizar_();
+	void dibujar();
+};
+
+fuente internet.com
