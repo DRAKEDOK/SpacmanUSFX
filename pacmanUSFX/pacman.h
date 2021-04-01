@@ -34,4 +34,4 @@ public:
 	void dibujar();
 };
 
-fuente internet.com
+fuen
