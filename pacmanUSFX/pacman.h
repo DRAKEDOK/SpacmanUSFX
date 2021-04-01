@@ -19,6 +19,6 @@ public:
 	void setVelocidadX(float _velocidadX) { velocidadX = _velocidadX; }
 	float getVelocidadY() { return VelocidadY }
 	void setVelocidadY(float _velocidadY) { velocidadY = _velocidadY; }
-
+	
 };
 
